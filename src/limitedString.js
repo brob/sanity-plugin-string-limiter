@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react'
 import { FormField } from '@sanity/base/components'
-import { TextInput, Stack, Text } from '@sanity/ui'
+import { TextInput, Stack, Text, ThemeProvider, studioTheme } from '@sanity/ui'
 
 // Utilities for patching
 import PatchEvent, { set, unset } from '@sanity/form-builder/PatchEvent'
@@ -33,6 +33,8 @@ export const LimitedString = React.forwardRef(
       [onChange, color]
     )
     return (
+      <ThemeProvider theme={studioTheme}>
+
       <Stack space={1}>
 
         <FormField
@@ -51,6 +53,7 @@ export const LimitedString = React.forwardRef(
         </FormField>
         <Text style={{ color: colors[color] }} muted size={1}>{value ? value.length : '0'} / {MaxConstraint}</Text>
       </Stack>
+      </ThemeProvider>
     )
   }
 )
