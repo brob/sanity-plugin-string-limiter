@@ -1,0 +1,47 @@
+{
+  "name": "sanity-plugin-string-limiter",
+  "version": "1.0.0",
+  "description": "A custom input component to show max length validation in a UI for editors",
+  "main": "lib/limitedStringType.js",
+  "scripts": {
+    "build": "sanipack build",
+    "watch": "sanipack build --watch",
+    "prepublishOnly": "sanipack build && sanipack verify"
+  },
+  "repository": {},
+  "keywords": [
+    "sanity",
+    "sanity-plugin"
+  ],
+  "author": "Bryan Robinson <bryan@sanity.io>",
+  "license": "MIT",
+  "dependencies": {
+    "prop-types": "15.7.2"
+  },
+  "devDependencies": {
+    "eslint": "7.25.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-config-sanity": "5.1.0",
+    "eslint-plugin-react": "7.23.2",
+    "prettier": "2.2.1",
+    "sanipack": "2.0.1"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0"
+  },
+  "prettier": {
+    "semi": false,
+    "printWidth": 100,
+    "bracketSpacing": false,
+    "singleQuote": true
+  },
+  "eslintConfig": {
+    "parser": "sanipack/babel/eslint-parser",
+    "extends": [
+      "sanity",
+      "sanity/react",
+      "prettier",
+      "prettier/react"
+    ]
+  }
+}
