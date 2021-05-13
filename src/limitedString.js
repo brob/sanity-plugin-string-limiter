@@ -37,7 +37,7 @@ const LimitedString = React.forwardRef((props, ref) => {
       (event) => {
         const inputValue = event.currentTarget.value
         if (inputValue) {
-          if (inputValue.length >= MaxConstraint) {
+          if (inputValue.length > MaxConstraint) {
             setColor('error')
           } else {
             setColor('valid')
