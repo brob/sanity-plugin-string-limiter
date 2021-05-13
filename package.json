@@ -16,6 +16,7 @@
   "author": "Bryan Robinson <bryan@sanity.io>",
   "license": "MIT",
   "dependencies": {
+    "@reach/auto-id": "^0.13.2",
     "@sanity/base": "*",
     "@sanity/form-builder": "^2.10.2",
     "@sanity/ui": "^0.33.19",
