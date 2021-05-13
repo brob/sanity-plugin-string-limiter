@@ -1,6 +1,6 @@
 {
   "name": "sanity-plugin-string-limiter",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A custom input component to show max length validation in a UI for editors",
   "main": "lib/limitedStringType.js",
   "scripts": {
